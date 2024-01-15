@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Universe Hash</title>
+</head>
+<body>
+    <!-- HEADER FOR MAIN CONTENT -->
+    <header style="text-align: center;">
+        <h1>
+            <b>Cloud Universe Hash</b>
+        </h1>
+        <img 
+        width="1000" 
+        height="500" 
+        src="https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Yml0Y29pbnxlbnwwfHwwfHx8MA%3D%3D">
+        <!-- DESCRIPTION OF MINERS AND AVAILABLE MINERS -->
+    </header>
+    <main>
+        <section>
+            <header>
+                <h1 style="text-align: center;">Miners</h1>
+            </header>
+            <ol>
+                <li>A1</li>
+                    <ul>
+                        <li>BTC</li>
+                        <li>24/hr Payout Cycle</li>
+                        <li>Liquid Cooled</li>
+                    </ul>
+                <li>A2</li>
+                    <ul>
+                        <li>LTC</li>
+                        <li>24/hr Payout Cycle</li>
+                        <li>Liquid Cooled</li>
+                    </ul>
+                <li>A3</li>
+                    <ul>
+                        <li>XRP</li>
+                        <li>24/hr Payout Cycle</li>
+                        <li>Liquid Cooled</li>
+                    </ul>
+            </ol>
+        </section>
+        <!-- PAYMENT FORM (AVAILABLE OPTIONS : CREDIT, DEBIT) -->
+        <section>
+            <form action="payment.html">
+                <h2>Payment</h2>
+                <label for="minerSelection"><b>Miner Selection :</b></label>
+                <select name="miners" id="minerSelection">
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                </select>
+                <label for="paySelection"><b>Payment Selection :</b></label>
+                <select name="pay" id="paySelection">
+                    <option value="debit">Debit</option>
+                    <option value="credit">Credit</option>
+                </select>
+                <label for="name"><b>Name :</b></label>
+                <input name="Name" id="name" type="text">
+                <label for="email"><b>Email :</b></label>
+                <input name="Email" id="email" type="email">
+                <input type="submit" onclick="alert('Purchase Complete. Continue ?')">
+            </form>
+        </section>
+    </main>
+    <footer>
+        Contains Contact info
+    </footer>
+</body>
+</html>
